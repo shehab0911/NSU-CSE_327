@@ -1,2 +1,2 @@
-# NSU_CSE_327_Project
-A Document Management System
+# My Project name is Plan international and
+ It's A Document Management System
