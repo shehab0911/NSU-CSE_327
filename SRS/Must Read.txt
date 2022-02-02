@@ -1,0 +1,13 @@
+Read this before start your work.........
+
+This is fullu updated srs design.As sir told us to keep the table of contents on the left side
+as a side nav bar so i changed the whole web page.Everyone please make sure to add a new 
+section everytime before update your work.
+
+The main purpose of this design to keep the whole srs in one page and the same time printable.
+when srs will press the print button the whole website will be printed with "table of contents".
+
+We have to keep up updating till today night.Please,everyone be quick and active
+so we can have enough time if we have to corret our work.
+
+

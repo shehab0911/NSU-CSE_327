@@ -1,0 +1,801 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Software Requirement Specification</title>
+     
+     <!-- css files -->     
+    <link type="text/css" rel="stylesheet" href="fonts/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="style.css" media="screen">
+    <link type="text/css" rel="stylesheet" href="css/responsive.css">
+    <link type="text/css" rel="stylesheet" href="stylePrint.css" media="print">
+    
+
+</head>
+
+<body> 
+         
+         
+            <!--THE NAVBAR-->
+   
+    <nav>
+      <div class="">
+        <div class="">
+          <div class="">        
+            <div class="top-nav  menubar">
+              <h2 style="text-align: center; color: #FFF;">PLAN INTERNATIONAL </h2>
+              <ul class="nav justify-content-end left-items">
+                  <li><a href="#section-1">Introduction</a><i class="fa fa-sort-desc"></i>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="#purpose">1.1 Purpose</a></li>
+                        <li><a href="#docCon">1.2 Document Convention</a></li>
+                        <li><a href="#inAu">1.3 Intended Audience and Reading Suggestion</a></li>
+                        <li><a href="#prCs">1.4 Product Scope</a></li>
+                        <li><a href="#reff">1.5 References</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#section-2">Overall Description</a><i class="fa fa-sort-desc"></i>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="#proPer">2.1 Product Perspective</a></li>
+                        <li><a href="#proFunc">2.2 Product Functions</a></li>
+                        <li><a href="#usClass">2.3 User Classes and Characteristics</a></li>
+                        <li><a href="#opInv">2.4 Operating Environment</a></li>
+                        <li><a href="#desiImp">2.5 Design And Implementation Constraints</a></li>
+                        <li><a href="#usDoc">2.6 User Doccumentation</a></li>
+                        <li><a href="#assDep">2.7 Assumptions and Dependencies</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#section-3">External Interface Requirements</a><i class="fa fa-sort-desc"></i>
+                     <div class="sub-menu">
+                      <ul>
+                        <li><a href="#userInterface">3.1 User Interfaces</a></li>
+                        <li><a href="#hardwareInterface">3.2 Hardware Interfaces</a></li>
+                        <li><a href="#softwareInterface">3.3 Software Interfaces</a></li>
+                        <li><a href="#communicationInterface">3.4 Communication Interfaces</a></li>
+                      </ul>
+                    </div>   
+                  </li>
+                  <li><a href="#section-4">System Features</a><i class="fa fa-sort-desc"></i>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="#reg">4.1  System Feature - Home Page </a></li>
+                        <li><a href="#usreg">4.2  System Feature - User Registration :</a></li>
+                        <li><a href="#uslog">4.3 System Feature - Log In </a></li>
+                        <li><a href="#sysprof">4.4 System Feature - Profile  </a>
+                        <li><a href="#sec4.5">4.5 System Feature - User Password Reset </a>
+                         <li><a href="#sec4.6">4.6  System Feature - Uploaded Documents</a>
+                        <li><a href="#sec4.7">4.7 System Feature - Private Folder Management</a>
+                          <li><a href="#private-fold">4.8 System Feature - Private Folder Management</a>
+                                  
+
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#section-5">Other Non-functional Requirements</a><i class="fa fa-sort-desc"></i>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="#performanceReq">5.1 Performance Requirements</a></li>
+                        <li><a href="#safetyReq">5.2 Safety Requirements</a></li>
+                        <li><a href="#SecurityReq">5.3 Security Requirements</a></li>
+                        <li><a href="#softQual">5.4 Software Quality and Attributes</a></li>
+                        <li><a href="#bussRules">5.5 Business Rules</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#Glossary">Appendix</a></li>
+
+                  <li><a href="#Meet-the-Team">Meet The Team</a></li>
+
+                  <li style="text-align: center; margin-top: 20%;"><button class="btn btn-primary" onclick="window.print()">Print Page</button></li>
+                </ul> 
+                
+
+                </div>
+            </div>
+          </div>
+      </div>
+
+    </nav>
+    
+    
+  <div class="wrapper"> 
+    <div id="toc_container">
+    <p class="toc_title">Table of Contents</p>
+    <ul class="toc_list">
+      <br>
+      <br>
+      <br>
+      <li><a href="#section-1">1. Introduction</a>
+       <ul>
+         <li><a href="#purpose">1.1 Purpose..............................................................................................................2</a></li>
+         <li><a href="#docCon">1.2 Document Conventions...............................................................................2</a></li>
+         <li><a href="#inAu">1.3 Intended Audience and Reading Suggestions...................................2</a></li>
+         <li><a href="#prCs">1.4 Product Scope.................................................................................................2</a></li>
+         <li><a href="#reff">1.5 References........................................................................................................3</a></li>
+       </ul>
+      </li>
+      <li><a href="#section-2">2. Overall Description</a>
+       <ul>
+         <li><a href="#proPer">2.1 Product Perspective.....................................................................................3</a></li>
+         <li><a href="#proFunc">2.2 Product Functions........................................................................................4</a></li>
+         <li><a href="#usClass">2.3 User Classes and Characteristics.............................................................4</a></li>
+         <li><a href="#opInv">2.4 Operating Environement............................................................................4</a></li>
+         <li><a href="#desiImp">2.5 Design and Implementation Constraints.............................................5</a></li>
+         <li><a href="#usDoc">2.6 User Documentations..................................................................................5</a></li>
+         <li><a href="#assDep">2.7 Assumptions and Dependencies.............................................................5</a></li>
+       </ul>
+      </li>
+
+      <li><a href="#section-3">3. External Requirements Specification</a>
+        <ul>
+         <li><a href="#userInterface">3.1 User Interface..................................................................................................5</a></li>
+         <li><a href="#hardwareInterface">3.2 Hardware Interface.......................................................................................7</a></li>
+         <li><a href="#softwareInterface">3.3 Software Interface.........................................................................................7</a></li>
+         <li><a href="#communicationInterface">3.4 Communication Interface..........................................................................8</a></li>
+       </ul>
+      </li>
+
+      <li><a href="#section-4">4. System Features</a>
+        <ul>
+         <li><a href="#reg">4.1 Advanced User Registration......................................................................8</a></li>
+         <li><a href="#aug">4.2 Augmented Reality Shopping Experience..........................................10</a></li>
+         <li><a href="#proCart">4.3 Product Cart....................................................................................................11</a></li>
+       </ul>
+      </li>
+
+      <li><a href="#section-5">5. Other Non-Functional Requirements</a>
+        <ul>
+         <li><a href="#performanceReq">5.1 Performance .Requirements.....................................................................13</a></li>
+         <li><a href="#safetyReq">5.2 Safety Requirements...................................................................................13</a></li>
+         <li><a href="#SecurityReq">5.3 Security Requirements................................................................................13</a></li>
+         <li><a href="#softQual">5.4 Software Quality and Attributes.............................................................13</a></li>
+         <li><a href="#bussRules">5.5 Bussines Rules...............................................................................................14</a></li>
+       </ul>
+      </li>
+
+      <li><a href="#Appendxx">6. Appendix</a>
+        <ul>
+         <li><a href="#Glossary">6.1 Glossary...........................................................................................................14</a></li>
+       </ul>
+      </li>
+      <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </ul>
+    </div>  
+            <!--  section-1  -->
+    <section class="section-1" id="section-1">
+      <div class="background-color">
+        
+        <h1 class="head" style="margin-bottom: 30px; text-align: center;">1. Introduction</h1>
+            <div class="row">
+          	  <div class="col-md-12">
+          		<h2 id="purpose">1.1 Purpose</h2>
+          		  <p>The essential purpose of this project is to digitize existing documents/files from the Department of Finance. The converted digital format will be stored into storage defined by the Department of finance using a simple document management system capable search and retrieval for attaching the same. All of the required features of our Document Management System project will be expressed in this SRS. The formal release version of the project will also meet every requirement listed in this document</p>
+              </div>
+
+              <div class="col-md-12">
+          		<h2 id="docCon">1.2 Document Conventions</h2>
+              <p>Some document conventions are listed below.</p>
+      
+              <style>
+              table {
+                border-collapse: collapse;
+              }
+              
+              table, td, th {
+                border: 1px solid black;
+              }
+              </style>
+              
+              
+              <table style="width:30%">
+                <tr>
+                  <td>SRS</td>
+                  <td>Software Resource Specification</td>
+                </tr>
+                <tr>
+                  <td>DMS</td>
+                  <td>Document Management System</td>
+                </tr>
+                <tr>
+                  <td>DB</td>
+                  <td>Database</td>
+                </tr>
+                <tr>
+                  <td>RDB</td>
+                  <td>Relational Database</td>
+                </tr>
+                <tr>
+                  <td>ER</td>
+                  <td>Entity Relationship</td>
+                </tr>
+                <tr>
+                  <td>ERD</td>
+                  <td>Entity Relationship Diagram</td>
+                </tr>
+                <tr>
+                  <td>UML</td>
+                  <td>Unified Modelling Language</td>
+                </tr>
+                
+              </table>
+              <br></div>
+
+               <div class="col-md-12">
+          		<h2 id="inAu">1.3 Intended Audience and Reading Suggestions</h2>
+              <p>
+                This system is basically for the all the employee of the Plan International. As it is a system which will be used for storing the digitized documents of Plan International. So, there will be different types of user. All the user can access documents from his/her respective category. The admin can access all the documents stored in the system. The people from marketing system will only be able to see the financial documents. The project manager will be able to see the documents of all kinds of documents regarding the org’s projects.
+              </p>
+              <p>
+                For reading suggestions, the system will suggest the user depends on his recent activity such as such directory, mostly read type or category.All the documents will be organized by date and indexing. So, any user can search or find his or her desired documents within a short moment from the system.
+              </p>
+              </div>
+
+              <div class="col-md-12">
+          		<h2 id="prCs">1.4 Product Scope</h2>
+                  <p>The DMS will have so many scopes, and users will be able to use them in a particular case. Since it is a custom DMS,so users will be able to use the system smoothly.On the other hand, an admin will be able to customize the system quickly. At first, this DMS will have a scanning option to scan original existing documents into electronic/digital format using an effective, cost-efficient,
+                  and technologically advanced document digitalization solution.The digitized document will be able to integrate with the existing DMS of the Department without using any third-party software. 
+                  Admin will be able to access the file repository and can edit the repository.The system will have a public and private repository where files will be stored. 
+                  Only permitted users will be able to get access the repository using an index.
+                  The system will also have an automatic archive feature, and it will be capable of route records to one or more users.It will also have an unlimited creation of user account. Admin will be able to manage all the users.Users or admin will be able to search and retrieve documents from the search option.The system will also have a report management functionality and notification management system.The system will be able to accessible through multiple platforms.The system will also have some security and safety protocol.</p>
+                </div>
+
+              <div class="col-md-12">
+          		<h2 id="reff">1.5 References</h2>
+ 		           <p><a href="https://material.io/design/">Google Material Design StyleGuide</a></p>
+               <p><a href="https://developers.google.com/ar">Google ArCore</a></p>
+               <p><a href="https://docs.djangoproject.com/en/2.2/">Python Django Framework</a></p>
+               <p><a href="https://firebase.google.com/">Firebase Backend Service</a></p>
+               <p><a href="https://krazytech.com/projects/sample-software-requirements-specificationsrs-report">
+                Krazytech.com</Krazytech></a>
+                </p>
+               <p><a href="https://developer.android.com/about/versions/10?gclid=Cj0KCQjw6KrtBRDLARIsAKzvQIFOP_gqEB6Pdj6PLX-bhDJU8CXaOI1RkNMEdozU6Qn1Hpo2lzRZQZEaAnQ8EALw_wcB">Android Developers</a></p>
+              </div>
+
+
+        </div>
+      </div>
+    </section>    
+            <!-- section-1 ends -->
+
+
+
+            <!--  section-2  -->
+    <section class="section-2" id="section-2">
+      <section class="bg-light">
+        <article class="py-3 text-dark">
+          <div>
+            <h3 style="text-align:left">2.Overall Description</h3>
+            <h5 style="text-align:left" id="proPer">2.1 Product Perspective </h5>
+            <p style="text-align:left"> Plan International is an organization, and they work for children's rights and equality for girls. For their organizations, they need a well-established Document management system. The system should be maintained by the admin authority and will be a function for users. Document manage system gives the users useful information that where the file location, how to upload, delete, retrieve, and scan bulk or a single document. It also has a mobile application that allows users to open an app and start using it. That makes it simpler for the user to keep track of different versions and changes made by other users. here I can mention some well-renowned sites already made for user's better workflow such as, pCloud, HubSpot, Alfresco, LogicalDOC etc.
+   </p>
+      
+            <h5 style="text-align:left" id="usClass">2.2 Product Functions</h5>
+
+            <p> At first User have to search Plan International URL or get the link from somewhere. When user click on the link, user can see a welcome page. Where he/she can search/ browse to find Documents/Upload Documents/Delete Documents/Retrieve Documents etc. If the user wants to upload any files , he/she need to sign up in Document Management System . The user will have a user panel where he/she can add or remove his/her files. The user can log out anytime. Here, the admin can also sign in but can not register. Admin will also have a panel for him/her .<br><br>
+              To better understand a simplified user workflow diagram is given below. <br><br>
+
+                <img src="images/workflows .png">
+
+      <h5 style="text-align:left" id="usClass">2.3 User Classes and Characteristics</h5>
+      <p>
+         There are two types of user Classes in Document Management System. <br>
+         First one is admin and the next one is user.</p>
+         <p>There are Three types of user.<br>
+          The  types of users are Manager, Employee and Administrator, they can edit and see the uploaded documents  . User has no privilege to access in the database, but admin does. Both user and admin can sign in, but sign up can only done by users. User can search files, edit Profile etc. and get their desired information that they are looking for.<br>
+         A UML use case diagram is given below to show the activities done by user Classes.</p>
+              <img src="images/use_case (.png">
+
+      <h5 style="text-align:left" id="opInv">2.4 Operating Environment</h5>
+      <p>Because Document Management System is a web base system it’s Operating environment is independent but we also make Document Management System for android user, so it need java for running the app    </p>
+      
+      <h5 style="text-align:left" id="desiImp">2.5  Design and Implementation Constraints</h5>
+
+      <p>1.Admin needs to check and update the database for new Users detail list by manually or by the help of integrated API.<br>
+
+2. You can move all of your current paper documents to electronic copies once you've implemented a new document management system. Scanning with a document management program collects the written content, unlike most scanning techniques, which scan paper documents as images with no textual details.<br>
+
+3.Users devices having the system (Website/app) must be connected via WIFI or Mobile Data.<br>
+
+4.  It is possible to index paper in several ways, but it is inconvenient, expensive, and 
+time-consuming. Images of documents in a document management system can be indexed in a variety of ways at the same time.<br>
+
+5. Ascertain document protection and accessibility.<br>
+
+6.User devices should have sufficient memories for uploading the files.<br>
+
+7. Archive and retrieve records in a timely and reliable manner.<br>
+
+8. A computerized data retrieval system. It's a place where you can store information.<br>
+
+9. An application instance that is capable of accepting User’s requests and responding appropriately.<br>
+</p>
+      
+      <h5 style="text-align:left" id="usDoc">2.6 User Documentation</h5>
+      <p> The platform  is just entering development stage .Once the development is complete and a prototype a released user documentation will be provided   </p>
+
+
+      <h5 style="text-align:left" id="assDep">2.7 Assumptions and Dependencies</h5>
+      <p>One assumption for the android application is the application will be used mostly on high-end  or latest phones as for a few years as the hardware requirement can only be met on those phones
+Document Management System is partially dependent on websites , for getting data. Document Management System only works with files . Users may find difficulties in operating system like IOS/MacOS/Linux etc.
+    </p>
+
+    </section>    
+            <!-- section-2 ends -->
+
+
+             <!--  section-3  -->
+              <!-- Written By S M Gazzali Arafat Nishan--> 
+    <section class="section-3" id="section-3">
+      <div class="background-color">
+        <h3 style="text-align:left">3. External Interface Requirements</h3>
+        <h5 style="text-align:left">3.1	User Interfaces</h5>
+        <p style="text-align:left">DMS is a web based application and it will also run on android devices.
+             Here, we have worked on UI on Adobe illustrator to represent the ideas of our application’s graphical interface.
+             So, this User interface is based on our initial work, use case diagram, and workflow diagram. 
+             Here, we have attached some UI design below.</p>
+        
+        <br>
+        <br>
+        <br>
+        <h4>(1) Plan International login Page.
+          <br>
+        <img src="images/plan_international_login.png"></p>
+        <h4> (2) Plan International Signup Page.</h4>
+        <img src="images/plan_international_signup.png"></p>
+        <h4> (3) Plan International Dashboard.</h4>
+        <img src="images/plan_international_dashboard.png"></p>
+        <h4> (4) Plan International Document Upload Window.</h4>
+        <img src="images/plan_international_document_upload_window.png"></p>
+
+        <h5 style="text-align:left">3.2 Hardware Interface</h5>
+        <p>Since the DMS will run over the internet,
+           the system will be required some hardware to connect with the live server through the internet. 
+           The system will also need a non-stop internet connection to get all the updates instantly.
+            The software system will also work on mobile devices, so we will be required an android device to run the system. 
+            The system will have a scanning option on both web-based or android devices. The system will also have a connection with the scanner of the computer.
+          </p>
+          <p>On the other hand, it will have a feature which is OCR. The Android version of the system will be able to read the characters from the scanned documents. 
+            The system will be required permission from the camera on the android version so that users can scan documents quickly. The system will be required a connection with Modem, Ethernet,
+             WAN\LAN to run the system smoothly.</p>
+  
+  <br>
+  
+  <h5 style="text-align:left">3.3 Software Interfaces</h5>
+  <p>In this section, we’ll need a DBS to store Actor’s information.
+     For, example their name, age, date of birth, and so on.
+      In this case, we will try to use an RDB with Xampp, MySQL, and PHP to connect this RDB with the server.
+       At first, we will have a login page, then a signup page. 
+       Non-registered users will be able to sign up by tapping the signup button. 
+       After filling in all the required information, then he\she will hit the submit button to sign up request.
+        Then, Users account will be verified by an admin. 
+        The user will get a notification on her\his email to confirm the link and with a reset password option to sign in to the system. 
+        </p>
+        <p>The software interface is divided into some parts - a home\sign in the page,
+          a signup page, and an Admin/Users dashboard.
+           All the functionalities will be performed from the dashboard.
+            The dashboard will contain a private/public repository, records management,
+             Accounts, Search and retrieval option, report management, 
+             notification management option, system management, and some sorts of security 
+             & safety options.
+             The software system can also  be run in various platform.</p>
+  
+  <h5 style="text-align:left">3.4 Communication interfaces</h5>
+  <p>For communication Interface, DMS may use HTTP or HTTPS to run the system.
+     Users will be notified through email if any changes occur in his/her account.
+      The system can be run on any web browser and the system may have some security features to prevent brute force attack in the system so,
+       if any user enters wrong passwords 3 times,
+        then the account will be blocked automatically & the user will notified through an email by the system. </p>
+  
+      </div>
+    </section>    
+            <!-- section-3 ends -->  
+
+
+
+
+                     <!--  section-4  -->
+          <!-- Written By Tabassum Mahbub --> 
+
+            <section class="section-4" id="section-4">
+              <div class="background-color">
+                <h3 style="text-align:left" id="section-4">4 System Features :</h3>
+                <br> 
+                <h5 style="text-align:left">4.0.1 Description :</h5>
+                <p>Using the actor list of our application we separated them into two section, one is client side and another is server side</p> 
+        
+                <h5 style="text-align:left" id ="reg">4.1 System Feature - Home Page :</h5>
+                <h5 style="text-align:left">4.1.1 Description :</h5>
+                <p>This is the initial start up client screen. when a client try to access we provide the landing page </p>
+                <h5 style="text-align:left">4.1.2 Priority :</h5>
+                <p>Priority level = Low </p>
+                <h5 style="text-align:left">4.1.3 Sequence :</h5>
+                <p>Precondition: Client connects successfully to the server by accessing the web address. </p>
+                <ol>
+                  <li>Client send a request to the application's web address.</li>
+                  <li>Home (start up) interface shows up to the browser.</li>
+                </ol>
+                <p>Post Condition: None</p>
+
+                <h5 style="text-align:left" id="usreg">4.2 System Feature - User Registration :</h5>
+                <h5 style="text-align:left">4.2.1 Description :</h5>
+                <p>This feature provides a registration form for new client. To explore everything or to take all the  services we have, every client must have an account. </p>
+                <h5 style="text-align:left">4.2.2 Priority :</h5>
+                <p>Priority level = High </p>
+                <h5 style="text-align:left">4.2.3 Sequence :</h5>
+                <p>Precondition: Client connects successfully to the server by accessing the web address. Client clicked the Sign Up button from the home (start up)  interface. </p>
+                <ol>
+                  <li>User enters the URL into his/her desired browser and presses enter.</li>
+                  <li>System will show the home page.</li>
+                  <li>User clicks the "Sign Up" button.</li>
+                  <li>System displays the registration page.</li>
+                  <li>User fills out the required fields like name, username, email, password in the form, and presses the "Create Account" button or presses enter.</li>
+                  <li>System responds with a message saying that the registration is complete and an OK button appears.</li>
+                  <li>User clicks the OK button.</li>
+                  <li>System redirects user to the user home page.</li>
+                </ol>
+                <p>Alternative approach: </p>
+                <ol>
+                  <li>User forgets or does not fill up all of the required fields for registration.</li>
+                  <li>System responds with “Input is required”.</li>
+                  <li>User does not fulfill the conditions to create a new username or password.</li>
+                  <li>System will show the required rules to make username and password.</li>
+                </ol>
+                <p>Post Condition: According to the role client will get an account and profile if every steps is perfect.</p>
+                <p>Abnormal Paths: If anything goes wrong to register then a message is displayed on the screen that inform the client to correct it.
+                </p>
+
+                <h5 style="text-align:left" id="uslog">4.3 System Feature - Log In :</h5>
+                <h5 style="text-align:left">4.3.1 Description :</h5>
+                <p>This feature provides a login method to get access his/her account for registered client only but anyone can access this page by clicking on sign in button. This feature provides the control of the account to the account owner.</p>
+                <h5 style="text-align:left">4.3.2 Priority :</h5>
+                <p>Priority level = Medium </p>
+                <h5 style="text-align:left">4.3.3 Sequence :</h5>
+                <p>Precondition: Client connects successfully to the server by accessing the web address. Client clicked the Sign In button from the home (start up)  interface. </p>
+                <ol>
+                  <li> User enters the URL into his/her desired browser and presses enter.</li>
+                  <li>System will show the home page.</li>
+                  <li>User selects the login option from the home page.</li>
+                  <li>System displays the login page with fields for username/email and password.</li>
+                  <li>User fills out the login information into their required fields and clicks the login button or presses enter.</li>
+                  <li>System verifies the login credentials using Google Login or Active Directory as login authentication, and redirects the user to the user dashboard if the login details match.</li>
+                  <li>User spends an idle time of 15 minutes in the system.</li>
+                  <li>System logs the user out automatically.</li>
+                </ol>
+                <p>Alternative Course of Events/Actions: </p>
+                <ol>
+                  <li>User does not fill out the login credentials in the given fields; username or password is missing.</li>
+                  <li>System responds with “Username and password is required”</li>
+                  <li>User provides invalid login information.</li>
+                  <li>System responds with an error message saying “Username or password is incorrect” and blocks accounts with 3 failed login attempts.</li>
+                </ol>
+                <p>Post Condition:  According to the role client will get the profile page. Abnormal Paths: If Email or password is not correct then a message is displayed on the screen that inform the client to correct it.
+          .</p>
+             
+              <h5 style="text-align:left" id="sysprof">4.4 System Feature - Profile :</h5>
+              <h5 style="text-align:left">4.4.1 Description :</h5>
+              <p>This feature shows the profile of a user. It contains all classes user created if the user is logged in.</p>
+              <h5 style="text-align:left">4.4.2 Priority :</h5>
+              <p>Priority level = Medium </p>
+              <h5 style="text-align:left">4.4.3 Sequence :</h5>
+              <p>Precondition: Client must be logged in to explore this feature. </p>
+              <ol>
+                <li>Logged in user can get the acces of profile view, update profile, etc.</li>
+                <li>By clicking on the profile tag user can see in details profile information.</li>
+              </ol>
+              <p>Post Condition: None.</p>
+              
+              <h5 style="text-align:left" id="sec4.5">4.5 System Feature - User Password Reset:</h5>
+                <h5 style="text-align:left">4.5.1 Description :</h5>
+                <p>This high priority function allows users to change their password or request for a new password in case they forget their existing one or simply want to change it for security purposes</p>
+                <h5 style="text-align:left">4.5.2 Priority :</h5>
+                <p>Priority level = High </p>
+                <h5 style="text-align:left">4.5.3 Sequence :</h5>
+                <p>Actor: User</p>
+                <ol>
+                  <li>User enters the URL into the browser's field and presses enter. System shows the home page.</li>
+                  <li>User clicks the login option from the home page. System shows the login page.</li>
+                  <li>User selects the "Forgot Password" option from the login page. System will redirect user to the Reset Password page.</li>
+                  <li>User enters the new password in the given field. System sends a conformation code to the user email and notifies the admin using an email.</li>
+                  <li>User enters the confirmation code in the password reset page. System verifies the confirmation code by matching user's entered code with code given in the confirmation mail, saves user's new password, and then redirects user to the user home page.</li>
+                  <li>User selects the account management option. System redirects user to the account management page.</li>
+                  <li>User clicks the reset password option. Repeat steps 3-5.</li>
+                        </ol>
+                <p>Alternative Course of Events/Actions:</p>
+                <ol>
+                  <li>User enters a code that does not match the code given in the confirmation mail.</li>
+                  <li>System displays an error message saying "Invalid Code" along with a "Try Again" button.</li>
+                </ol>
+
+                <h5 style="text-align:left" id="sec4.6">4.6 System Feature - Uploaded Documents:</h5>
+                <h5 style="text-align:left">4.6.1 Description :</h5>
+                <p>This top priority function allows users view their already uploaded documents as well as upload new files/documents.
+        </p>
+                <h5 style="text-align:left">4.6.2 Priority :</h5>
+                <p>Priority level = High </p>
+                <h5 style="text-align:left">4.6.3 Sequence :</h5>
+                <p>Actor: User</p>
+                <ol>
+                  <li>User enters the URL into the browser's field and presses enter.</li>
+                  <li>System shows the home page.</li>
+                  <li>User clicks the login option from the home page.</li>
+                  <li>System shows the login page.</li>
+                  <li>User enters the required login details into the given fields of the login page, and presses enter or the login button.</li>
+                  <li>System verifies the login information and displays the user dashboard in the home page consisting of the following options- public folder, private folder, uploaded documents and notifications.</li>
+                  <li>User chooses the “Uploaded Documents” option from the dashboard.</li>
+                  <li>System displays a list of all files/documents uploaded along with details like upload date.</li>
+                  <li>User can view/manipulate all the documents from this folder and click the save option.</li>
+                  <li>System saves any changes made by the user.</li>
+                  <li>User selects the browse option to browse for a selected file.</li>
+                  <li>System displays the files within the device allowing users to choose from these files.</li>
+                  <li>User selects the desired file(s) and clicks the Upload button.</li>
+                  <li>System uploads new file(s)/document(s) and if the selected file is an image, then it is converted to text before uploading. The system also creates an index field for file(s) to be uploaded.</li>
+                  <li>User adds upload and expiry date information for the file(s).</li>
+                  <li>System adds other parameters for archiving.</li>
+                  <li> User selects the option to upload index file in csv format.</li>
+                  <li>System accepts the csv file and links the attributes in designated file(s).</li>
+                </ol>
+
+                <h5 style="text-align:left" id="sec4.7">4.7 System Feature - Public Folder Management:</h5>
+                <h5 style="text-align:left">4.7.1 Description :</h5>
+                <p>This is another high priority function which allows users to view file(s) within the public repositories that they are a part of and allows creator to edit those files as well.</p>
+                <h5 style="text-align:left">4.7.2 Priority :</h5>
+                <p>Priority level = High </p>
+                <h5 style="text-align:left">4.7.3 Sequence :</h5>
+                <p>Actor: User</p>
+                <ol>
+                  <li>User enters the URL into the browser's field and presses enter.</li>
+                  <li>System shows the home page.</li>
+                  <li>User clicks the login option from the home page.</li>
+                  <li>System shows the login page.</li>
+                  <li>User enters the required login details into the given fields of the login page, and presses enter or the login button.</li>
+                  <li>System verifies the login information and displays the user dashboard in the home page consisting of the following options- public folder, private folder, uploaded documents and notifications.</li>
+                  <li>User clicks the “Public Folder” option from the dashboard.</li>
+                  <li>System displays a list of all the records along with other details of the files such as upload date and other users of this public repository.</li>
+                  <li>User can browse for selected file(s) and upload files within the folder using the browse and upload option as well as add upload and expiry date information.</li>
+                  <li>System uploads the file as well as creates an index field for that particular file.</li>
+                  <li>User can add preferred users and groups to the folder.</li>
+                  <li>System allows assigned users and groups to access the folder.</li>
+                  <li>User can view/edit documents from this folder and click the save option.</li>
+                  <li>System saves any changes made by the user.</li>
+                </ol> 
+
+                <h5 style="text-align:left" id="private-fold">4.8 System Feature - Private Folder Management:</h5>
+                <h5 style="text-align:left">4.8.1 Description :</h5>
+                <p>Users can view/edit file(s) within the private repositories that they are a part of, and the creator of the file/folder can also add edit those files.</p>
+                <h5 style="text-align:left">4.8.2 Priority :</h5>
+                <p>Priority level = High </p>
+                <h5 style="text-align:left">4.8.3 Sequence :</h5>
+                <p>Actor: User</p>
+                <ol>
+                  <li>User enters the URL into the browser's field and presses enter.</li>
+                  <li>System shows the home page.</li>
+                  <li>User clicks the login option from the home page.</li>
+                  <li>System shows the login page.</li>
+                  <li>User enters the required login details into the given fields of the login page, and presses enter or the login button.</li>
+                  <li>6. System verifies the login information and displays the user dashboard in the home page consisting of the following options- public folder, private folder, uploaded documents and notifications.</li>
+                  <li>User selects the “Private Folder” option from the dashboard.</li>
+                  <li>System displays a list of all the records along with other details of the files such as upload date and other permitted users of the repository.</li>
+                  <li>User chooses the option to create a folder.</li>
+                  <li>System creates a new folder.</li>
+                  <li>User selects the lock folder option.</li>
+                  <li>System locks the folder and makes it private.</li>
+                  <li>User can browse for selected file(s) and upload files within the folder using the browse and upload option as well as add upload and expiry date information.</li>
+                  <li>System uploads the file as well as creates an index field for that particular file.</li>
+                  <li>User can add preferred users and groups to the folder and other users can only access the file if they are permitted.</li>
+                  <li>System grants or denies access permission depending on whether the user is assigned to the folder or not.</li>
+                  <li>User can view/edit documents from this folder and click the save option.</li>
+                  <li>System saves any changes made by the user.</li>
+                </ol>
+
+              </div>
+            </section>    
+                    <!-- section-4 ends -->  
+
+
+            
+                              <!--  section-5  -->
+                      <!-- Written By S M Gazzali Arafat Nishan--> 
+   <br>
+
+    <section class="section-3" id="section-5">
+      <div class="background-color">
+        <h3 style="text-align:left">5.	Other Nonfunctional Requirements :</h3>
+        <br> 
+        <h5 style="text-align:left" id="performanceReq">5.1	Performance Requirements :</h5>
+        <p>The DMS will be able to function every operation quickly, and it must be as responsive as a typical system.
+           It will be active enough so that it can perform 24 hours every day. Every operation will be processed within 2.5 seconds.
+            Sometimes, it may vary depending on the task. For example, when a user will upload a document, then it depends on document size too.
+             If the document size is too large, then it can take a bit more time to upload in the repository. So, it also depends on the user’s internet speed.</p>
+
+              <p>The system will be able to refresh, reload every window within 2 seconds. If any sorts of error occur, then the system will handle the error automatically.
+               Otherwise, it will pop up an error message’s window. There will be a searching option in the system so when a user searches something in the repository.
+                The system will be able to show the contents within 3 seconds. System performance can be improved by implementing SSD on the server’s computer. 
+                 Users will be able to access the database quickly.</p> 
+
+        <h5 style="text-align:left" id="safetyReq" >5.2	Safety Requirements :</h5>
+        <p> The software system will also have an archiving feature that will help DMS from any extensive damage to the database's comprehensive portion due to any catastrophic failure. 
+          The system must have a backup option for this damage. The method may have a connection with an online live server to avoid disk crashes while running the system.
+           An Archived database will help to back up user's information or files. 
+           The system will also have a recovery method that can help the users restore the old copy of the DB for safety purposes.
+            So, the system may have a backup option every day at a certain amount of time. 
+          </p>
+            <p>
+            The system must have standard certification, and the Maintenance feature can be improved if the company wants. 
+            The system will provide a five (5) hour response time on-site support, 9:00 AM to 5:00 PM, Sundays to Thursday. 
+            Even a Twenty-four (2a) hour resolution time and provision of service/replacement units if hardware issue is not resolved within 24 hours.
+             Provide telephone support/helpdesk facility for initial analysis and resolution of hardware and software-related problems.
+              Telephone support will be provided 24 hours x 7 days</p> 
+      
+        <h5 style="text-align:left" id="SecurityReq"  >5.3 Security Requirements :</h5>
+        <p>In our software system, there will have some security features.
+           For example, the password must be at least eight characters.
+            Characters must be mixed type alphanumeric, unique character, upper-case & lower-case letters.
+             The system will also have a brute force attack prevention facility. 
+             If any user enters the wrong passwords three times, then his/her account will be blocked automatically.
+              Only the admin can unlock the account by providing a password reset option to the user’s email.
+               User information will be kept confidential, and the system may have an encryption option to secure the data with the clients. 
+               Idle time of 15 minutes should automatically log out. Only alpha and numeric keys are allowed in the username and password fields.</p>
+  
+        <h5 style="text-align:left" id="softQual" >5.4 Software Quality Attributes :</h5>
+        <p>The software system will have standard quality attributes.
+           It will be usable for those who have knowledge of how to run or use the system. 
+          We will try to keep the system adaptive, reusable, flexible for the users.</p>
+
+        <h5 style="text-align:left"id="bussRules" >5.5 Business Rules :</h5>
+        <p>The software system will follow the business criteria and license agreement. In our system, there will be some users who will have different work in the DMS.
+           Employees, Administrators, and the manager will have different functions in the system.
+            So, they must follow the code of conduct the business rule.</p>
+  
+      </div>
+    </section>    
+            <!-- section-5 ends -->  
+
+                        <!--  section-6  -->
+    <section class="section-6" id="section-6">
+      <div class="background-color">
+        <h1 style="margin-bottom: 30px; text-align: center;" class="head" id="Appendxx">6.Appendix</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="Glossary">6.1 Glossary</h2>
+ 
+
+            <table class="dyn">
+              <tr>
+                <th>Terms</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>Project_Name</td>
+                <td>The name of our project with simplism and minimalism in foresight.</td>
+              </tr>
+              <tr>
+                <td>SRS</td>
+                <td>Software Requirement Specification.</td>
+              </tr>
+              <tr>
+                <td>IEEE</td>
+                <td>Institue of Electrical and Electronics Engineers.</td>
+              </tr>
+              <tr>
+                <td>Internet Protocol</td>
+                <td>A set of rules governing the format of data sent over the Internet or other network.</td>
+              </tr>
+              <tr>
+                <td>AR</td>
+                <td>Augmented Reality. It is the integration of digital information with the user's environment in real time.</td>
+              </tr>
+              <tr>
+                <td>Encryption</td>
+                <td>The process of encoding a message or information in such a way that only authorized parties can access
+                  it and those who are not authorized cannot.</td>
+              </tr>
+              <tr>
+                <td>API</td>
+                <td>Application Programming Interface. It is a set of routines, protocols, and tools for building software applications.</td>
+              </tr>
+              <tr>
+                <td>GUI</td>
+                <td> Graphical User Interface. It is a system of interactive components such as icons and other graphical objects that help a user interact with computer software.</td>
+              </tr>
+              <tr>
+                <td>SDK</td>
+                <td>Software Development Kit. It is a collection of software development tools in one installable package. </td>
+              </tr>
+    
+              <Br>
+              <br>
+    
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>       
+            <!-- section-6 ends --> 
+
+            <br>
+            <br>
+            <br>
+
+<!--Meet The team -->
+<section class="section6" id="section6">
+  <div class="background-color">
+  <h1 style="margin-bottom: 30px; text-align: center;" class="Meet-the-Team" id="Meet-the-Team">Team Spark</h1>
+  <div class="row">
+    
+<div class="col-3">
+<div class="teamCard">
+<img class="img-fluid" src= "images/Anas.png">
+<div class="personContainer">
+<h3 align="center" >Kaysarul Anas Apurba</h3>
+<p class="Designation">1811257642</p>
+<a href="mailto:Kaysarul.apurba@northsouth.edu"><button class="contact">Contact</button></a>
+</div>
+</div>
+</div>
+
+<div class="col-3">
+<div class="teamCard">
+<img class="img-fluid" src="images/Nishan.png">
+<div class="personContainer">
+<h3 align="center" >S M Gazzali Arafat Nishan</h3>
+<p class="Designation">1831513642</p>
+<a href="mailto:rofiqul.shehab05@northsouth.edu"><button class="contact">Contact</button></a>
+</div>
+</div>
+</div>
+
+<div class="col-3">
+<div class="teamCard">
+<img class="img-fluid" src="images/Shehab.png">
+<div class="personContainer">
+<h3 align="center">Rofiqul Alam Shehab </h3>
+<p class="Designation">1831185042</p>
+<a href="mailto:gazzali.nishan@northsouth.edu"><button class="contact">Contact</button></a>
+</div>
+</div>
+</div>
+
+<div class="col-3">
+<div class="teamCard">
+<img class=" img-fluid" src="images/Tabassum.png">
+<div class="personContainer">
+<h3 align="center">Tabassum Mahbub</h3>
+<p class="Designation">1812474042</p>
+<a href="mailto:tabassum.liya@northsouth.edu"><button class="contact">Contact</button></a>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+<!--MEET THE TEAM ENDS-->
+
+
+    <!-- javascript files here -->
+
+    
+    <script type="text/javascript" src="javascripts/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="javascripts/popper.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+</body>
+</html>
