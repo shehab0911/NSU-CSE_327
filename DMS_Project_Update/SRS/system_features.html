@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Written by Tabassum Mahbub -->
+	<meta charset="UTF-8">
+	<title>SRS</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+
+
+	<script src="https://use.fontawesome.com/c509487244.js"></script>
+
+</head>
+
+<body>
+	<div class="content-fluid">
+		<div class="multi_color_border"></div>
+		<div class="top_nav">
+			<div class="left">
+				<div class="logo"><p><span>Plan</span>International</p></div>
+			</div>
+
+			<div class="search_bar">
+				<input type="text" placeholder="Search">
+				<div id="bar"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			</div>
+		</div>
+
+		<div class="bottom_nav">
+			<div class="row">
+				<ul id="menuItems">
+
+					<li class="col-1"><a href="Introduction.html">Introduction</a></li>
+					<li class="col-2"><a href="#">Overall Description</a></li>
+					<li class="col-2"><a href="External_Interface_Requirements.html">External Interface</a></li>
+					<li class="col-2"><a href="system_features.html">System Features</a></li>
+					<li class="col-2"><a href="non_functional_requirements.html">NonFunctional Requirements</a></li>
+					<li class="col-2"><a href="#">Other Requirements</a></li>
+					<li class="col-1"><a href="#">Appendix</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<section class="bg-light">
+			<article class="py-3 text-dark">
+				<div>
+					<div>
+						<h3 style="text-align:left">4. System Features</h3>
+						</br>
+
+						<h4 style="text-align:left">4.0.1 Description</h4>
+						<p style="text-align:left">
+							Using the actor list of our application we separated them into two section, one is client side and another is server side.
+						</p>
+					</div>
+
+					</br>
+
+					<div>
+						<h4 style="text-align:left" class="tabassum">4.1 System Feature "Home Page"</h4>
+						</br>
+						<h5 style="text-align:left">4.1.1 Description</h5>
+						<p>This is the initial start up client screen. when a client (Student/Faculty) try to access </p>
+						<h5 style="text-align:left">4.1.2 Priority</h5>
+						<p>Priority level = Low </p>
+						<h5 style="text-align:left">4.1.3 Sequence</h5>
+						<p>Precondition: Client connects successfully to the server by accessing the web address. </p>
+						<dt>
+							<dd>  -- Client send a request to the application's web address.</dd>
+							<dd>  -- Home (start up) interface shows up to the browser.</dd>
+						</dt>
+						<p>Post Condition: None.</p>
+					</div>
+
+					</br>
+
+					<div>
+						<h4 style="text-align:left" class="tabassum">4.2 System Feature "Sign Up"</h4>
+						</br>
+						<h5 style="text-align:left">4.2.1 Description</h5>
+						<p>This feature provides a registration form for new client. To explore everything or to take all the  services we have, every client must have an account.</p>
+						<h5 style="text-align:left">4.2.2 Priority</h5>
+						<p>Priority level = High </p>
+						<h5 style="text-align:left">4.2.3 Sequence</h5>
+						<p>Precondition: Client connects successfully to the server by accessing the web address. Client clicked the Sign Up button from the home (start up)  interface.</p>
+						<dt>
+							<dd>  - Client must fill the form by providing the necessary information (name, email, role, etc) </dd>
+							<dd>  - After clicking the register button client will get a pop up message according the registration status. </dd>
+						</dt>
+						<p>Post Condition: According to the role client will get an account and profile if every steps is perfect. </p>
+
+						<p>Abnormal Paths: If anything goes wrong to register then a message is displayed on the screen that inform the client to correct it.
+						</p>
+					</div>
+
+					</br>
+
+					<div>
+						<h4 style="text-align:left" class="tabassum">4.3 System Feature "Sign In"</h4>
+						</br>
+						<h5 style="text-align:left">4.3.1 Description</h5>
+						<p>This feature provides a login method to get access his/her account for registered client only but anyone can access this page by clicking on sign in button. This feature provides the control of the account to the account owner.</p>
+						<h5 style="text-align:left">4.3.2 Priority</h5>
+						<p>Priority level = Medium </p>
+						<h5 style="text-align:left">4.3.3 Sequence</h5>
+						<p>Precondition: Client connects successfully to the server by accessing the web address. Client clicked the Sign In button from the home (start up)  interface.</p>
+						<dt>
+							<dd>  -- Client must fill the form by providing the necessary information (email, password)</dd>
+							<dd>  -- After clicking the Sign In button client will get his/her profile/Dashboard page. </dd>
+						</dt>
+						<p>Post Condition:  According to the role client will get the profile page.
+							Abnormal Paths: If Email or password is not correct then a message is displayed on the screen that inform the client to correct it.
+							.</p>
+					</div>
+
+					</br>
+
+					<div>
+						<h4 style="text-align:left" class="tabassum">4.4 System Feature "Profile"</h4>
+						</br>
+						<h5 style="text-align:left">4.4.1 Description</h5>
+						<p>This feature shows the profile of a user. It contains all classes user created if the user is logged in.</p>
+						<h5 style="text-align:left">4.4.2 Priority</h5>
+						<p>Priority level = Medium</p>
+						<h5 style="text-align:left">4.4.3 Sequence</h5>
+						<p>Precondition: Client must be logged in to explore this feature.</p>
+						<dt>
+							<dd>  -- Logged in user can get the acces of profile view, update profile, etc.</dd>
+							<dd>  -- By clicking on the profile tag user can see in details profile information.</dd>
+						</dt>
+						<p>Post Condition: None.</p>
+					</div>
+
+					</br>
+
+				</div>
+			</article>
+		</section>
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<script>
+			$(document).ready(function() {
+				$('#sidebarCollapse').on('click', function() {
+					$('#sidebar').toggleClass('active');
+				});
+			});
+		</script>
+
+		<div class="banner">
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Mountains+of+Christmas&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "poppins",sans-serif;
+}
+
+.multi_color_border{
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right,rgb(10, 139, 190) ,rgb(10, 139, 190), #494949 25%, #494949 50%, rgb(10, 139, 190),rgb(10, 139, 190), #494949 75%, #494949 100%);
+}
+.top_nav{
+  margin-top: 5px;
+  width: 100%;
+  height: 65px;
+  background: #fff;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top_nav .left{
+  display: flex;
+  align-items: center;
+}
+
+ .top_nav .left .logo p{
+  font-size: 24px;
+  font-weight: bold;
+  color:  #494949;
+  font-family: "poppins",sans-serif;
+  margin-right: 25px;
+}
+
+.top_nav .home lia{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .top_nav .home li a:hover {
+    background-color: rgb(46, 194, 102);
+  }
+  
+.top_nav .right ul{
+  display: flex;
+}
+
+.top_nav .right ul li{
+  margin: 0 12px;
+}
+
+.top_nav .right ul li:last-child{
+  background:  #37a000;
+  margin-right: 0;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.top_nav .right ul li:hover:last-child{
+  background: #494949;
+}
+
+.top_nav .right ul li a{
+  display: block;
+  padding: 8px 10px;
+  color: #666666;
+}
+
+.top_nav .right ul li:last-child a{
+   color: #fff;
+}
+
+.bottom_nav{
+  width: 100%;
+  background: #f9f9f9;
+  height: 45px;
+  padding: 0 50px;
+}
+.bottom_nav a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+} 
+
+.bottom_nav ul{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(10, 139, 190);
+}
+
+.bottom_nav ul li a{
+  color: #494949;
+  text-transform: uppercase;
+  font-size: 12px;
+  
+}
+
+.bottom_nav li a:hover {
+  background-color: rgb(44, 221, 112);
+}
+/*CSS code for Introduction part starting*/
+
+/* Written by S M Gazzali Arafat Nishan*/
+li {
+
+  display: inline;
+  float: left;
+}
+ul {
+  background-color: #dddddd;
+}
+
+
+.bottom_nav li {
+  float: left;
+}
+
+.bottom_nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.bg-light {
+    size: 7in 9.25in;
+    margin: 5mm 15mm 15mm 10mm;
+ }
+}
+
+
+
+/*CSS code for Introduction part ending*/
+
+
+/*CSS code for Introduction part ending*/
+
+/* CSS for both Non functional Requirements and System Features - by tabassum Mahbub */
+
+.tabassum {
+  background-color: mintcream;
+}
+
+/* CSS by tabassum Mahbub ends here  */
